@@ -91,18 +91,18 @@ For `res://UI/HUD.tscn`, use `res://Assets/Orbitron Black.ttf` with size 16 for 
 ## Colors
 
 Now, we want to procedurally color the bricks, depending on their score values. Look up the following [Open Color values](https://yeun.github.io/open-color/ingredients.html) and in `res://Brick/Brick.gd`, in the `_ready` callback, set the color based on the score value:
- * < 40: Grey 6
- * >= 40: Grape 6
- * >= 50: Violet 5
- * >= 60: Blue 6
- * >= 70: Lime 5
- * >= 80: Yellow 4
- * >= 90: Orange 5
- * >= 100: Red 8
+ * less than 40: Grey 6
+ * greater than or equal to 40: Grape 6
+ * greater than or equal to 50: Violet 5
+ * greater than or equal to 60: Blue 6
+ * greater than or equal to 70: Lime 5
+ * greater than or equal to 80: Yellow 4
+ * greater than or equal to 90: Orange 5
+ * greater than or equal to 100: Red 8
 
 The red and orange statements should look like this:
 ```
-if score >= 100:
+	if score >= 100:
 		$ColorRect.color = Color8(224,49,49)
 	elif score >= 90:
 		$ColorRect.color = Color8(253,126,20)
