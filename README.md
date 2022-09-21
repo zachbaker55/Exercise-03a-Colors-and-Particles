@@ -2,6 +2,8 @@
 
 Exercise for MSCH-C220
 
+A demonstration of this exercise is available at [https://youtu.be/t6AFCsJlIok](https://youtu.be/t6AFCsJlIok)
+
 This exercise is the first opportunity for you to experiment with juicy features to our brick-breaker game. The exercise will provide you with several features that should move you towards the implementation of Project 03.
 
 Fork this repository. When that process has completed, make sure that the top of the repository reads [your username]/Exercise-03a-Colors-and-Particles. Edit the LICENSE and replace BL-MSCH-C220-F22 with your full name. Commit your changes.
