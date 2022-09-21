@@ -84,7 +84,7 @@ Save the theme as `res://UI/UI.tres`
 
 For each of the UI scenes: `res://UI/End_Game.tscn`, `res://UI/Instructions.tscn`, `res://UI/Main_Menu.tscn`, `res://UI/Pause_Menu.tscn`, load `res://UI/UI.tres` as the theme for the root Control node. 
 
-For the Label in `res://UI/Main_Menu.tscn`, override the font to use size=65. Save that font as `res://UI/Title.tres`. Load that for the title lables in `res://UI/End_Game.tscn`, `res://UI/Instructions.tscn`, `res://UI/Main_Menu.tscn`, and `res://UI/Pause_Menu.tscn`.
+For the Label in `res://UI/Main_Menu.tscn`, override the font to use size=45. Save that font as `res://UI/Title.tres`. Load that for the title lables in `res://UI/End_Game.tscn`, `res://UI/Instructions.tscn`, `res://UI/Main_Menu.tscn`, and `res://UI/Pause_Menu.tscn`.
 
 For `res://UI/HUD.tscn`, use `res://Assets/Orbitron Black.ttf` with size 16 for the Score and Time labels.
 
@@ -139,6 +139,7 @@ We will, likewise, add a particle emitter to `res://Brick/Brick.tscn`. As a chil
  * Time->Explosiveness = 0.5
  * Drawing->Texture = `res://Assets/bubble.png`
  * Emission Shape->Shape = Rectangle
+ * Emission Shape->Rect Extents = (45,15)
  * Direction->Direction = (0,0)
  * Direction->Spread = 180
  * Gravity->Gravity = (0,0)
