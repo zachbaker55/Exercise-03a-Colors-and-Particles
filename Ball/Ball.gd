@@ -20,9 +20,11 @@ func _on_Ball_body_entered(body):
 	if body.has_method("hit"):
 		body.hit()
 		accelerate = true
-	
+		$Highlight.modulate.a = 1.0
 	
 func _integrate_forces(state):
+	if $Highlight.modulate.a > 0:
+		$Highlight.modulate.a -= decay
 	if position.y > Global.VP.y + 100:
 		die()
 	if accelerate:
